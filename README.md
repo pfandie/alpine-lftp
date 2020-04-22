@@ -1,3 +1,4 @@
+[![Build Status](https://api.travis-ci.org/pfandie/alpine-lftp.svg?branch=master)](https://travis-ci.org/pfandie/alpine-lftp)
 # alpine-lftp
 alpine container with lftp for those awful ftp-deployments
 
