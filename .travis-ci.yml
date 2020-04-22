@@ -1,0 +1,7 @@
+jobs:
+    include:
+      - stage: docker_build
+        script:
+          - echo "$DOCKER_PW" | docker login -u "$DOCKER_USER" --password-stdin
+          - docker build -t $DOCKER_USER/alpine-lftp:0.1 .
+          - docker push $DOCKER_USER/alpine-lftp:0.1
